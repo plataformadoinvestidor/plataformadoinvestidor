@@ -1,0 +1,190 @@
+    <!doctype html>
+    <html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        
+        <!--====== Title ======-->
+        <title>Plataforma do Investidor</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--====== Favicon Icon nao precisa======-->
+        <link rel="shortcut icon" href="/static/images/financelogo.svg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+        <!--====== Magnific Popup CSS nao precisa======-->
+        <link rel="stylesheet" href="">
+            
+        <!--====== Slick CSS nao precisa======-->
+        <link rel="stylesheet" href="/static/css/slick.css">
+            
+        <!--====== Line Icons CSS - nao precisa ======-->
+        <link rel="stylesheet" href="">
+            
+        <!--====== Bootstrap CSS ======-->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        
+        <!--====== Default CSS ======-->
+        <link rel="stylesheet" href="/static/css/default.css">
+        
+        <!--====== Style CSS ======-->
+        <link rel="stylesheet" href="/static/css/stylelogin.css">
+        
+        
+    </head>
+
+    <body>
+        <div class="preloader">
+            <div class="loader">
+                <div class="ytp-spinner">
+                    <div class="ytp-spinner-container">
+                        <div class="ytp-spinner-rotator">
+                            <div class="ytp-spinner-left">
+                                <div class="ytp-spinner-circle"></div>
+                            </div>
+                            <div class="ytp-spinner-right">
+                                <div class="ytp-spinner-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--====== PRELOADER PART ENDS ======-->
+        
+        <!--====== NAVBAR TWO PART START ======-->
+
+        <section class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                        
+                            <a class="navbar-brand" href="#">
+                                <img src="/static/images/finance.svg" alt="Logo">
+                            </a>
+                        
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="{% url 'home'%}">Página inicial</a></li>
+                                </ul>
+                            </div>
+                            
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section>
+
+        <!--====== NAVBAR TWO PART ENDS ======-->
+        
+        <!--====== SLIDER PART START ======-->
+
+        <section id="home" class="slider_area">
+            <div id="carouselThree" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                
+                        <div class="container">
+                        
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="slider-content">
+                                    
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div> <!-- row -->
+                        </div> <!-- container -->
+                
+                    </div> <!-- carousel-item -->
+
+
+
+                
+            </div>
+
+        </section>
+        <div class="col-lg-12">
+            <img src="https://uploaddeimagens.com.br/images/003/116/381/original/nossalogo.jpg?1614997231" id="img-logo" alt="Image" class="img-fluid">
+        </div>
+
+
+    <div class="col-md-8 login-sec">
+        <h3 id="titulo" class="mr-auto">Olá! Seja bem-vindo</h3>
+        <p id="paragrafo" class"mb-2 mr-auto">Informe os campos abaixo para entrar.</p>
+        <form class="login100-form validate-form">
+        <div class="wrap-input100 validate-input">
+            <span class="label-input100">E-mail</span>
+            <input class="input100" type="text" name="username" placeholder="Entre com o seu  e-mail">
+            <label for="email" class="bi bi-envelope" rel="tooltip" title="email" id="iconeemail"></label>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+            <span class="label-input100">Senha</span>
+            <input type="password" placeholder="Entre com a sua senha" class="input100" name="pass">
+            <label for="email" class="bi bi-lock" rel="tooltip" title="email" id="iconesenha"></label>
+        </div>
+
+        <div id="esquecisenha" class="text-right p-t-8 p-b-3">
+            <a href="#">
+                Esqueceu a senha?
+            </a>
+          
+        </div>
+
+        <div id ="divteste" class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+                <button id="btnentrar" class="btn btn-primary btn-lg">
+                    Entrar
+                </button>
+                <button id="btncadastrar" class="btn btn-outline-primary btn-lg">
+                   <a href="{% url 'cadastrarUsuario' %}"> Cadastre-se</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+
+        <!--====== Jquery js ======-->
+        <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/static/js/vendor/modernizr-3.7.1.min.js"></script>
+        
+        <!--====== Bootstrap js ======-->
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        
+        <!--====== Slick js ======-->
+        <script src="/static/js/slick.min.js"></script>
+        
+        <!--====== Magnific Popup js ======-->
+        <script src="/static/js/jquery.magnific-popup.min.js"></script>
+        
+        <!--====== Ajax Contact js ======-->
+        <script src="/static/js/ajax-contact.js"></script>
+        
+        <!--====== Isotope js ======-->
+        <script src="/static/js/imagesloaded.pkgd.min.js"></script>
+        <script src="/static/js/isotope.pkgd.min.js"></script>
+        
+        <!--====== Scrolling Nav js ======-->
+        <script src="/static/js/jquery.easing.min.js"></script>
+        <script src="/static/js/scrolling-nav.js"></script>
+        
+        <!--====== Main js ======-->
+        <script src="/static/js/mainlogin.js"></script>
+        
+    </body>
+
+    </html>
