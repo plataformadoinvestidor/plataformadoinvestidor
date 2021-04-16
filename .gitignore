@@ -1,1 +1,2 @@
 virtualenv-PDI/pyvenv.cfg
+*.pyc
