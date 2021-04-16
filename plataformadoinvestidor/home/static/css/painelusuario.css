@@ -8361,3 +8361,13 @@
         color: #000;
         font-weight: bold;
     }
+
+    #copyright{
+      font-size: 10px;
+      bottom:0%;
+      position: absolute;
+    }
+
+    #logo{
+      margin-left: 2px;
+    }

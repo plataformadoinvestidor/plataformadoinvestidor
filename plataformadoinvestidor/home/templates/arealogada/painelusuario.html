@@ -50,35 +50,57 @@
         </div>
 				<div class="p-4">
 		  		<h1><a href="index.html" class="logo">Plataforma do Investidor</a></h1>
-                  
 	        <ul class="list-unstyled components mb-5">
             <li class="active">
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-home mr-3"></span> Swing Trade</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-donate mr-3"></span> Buy & Hold</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
 	                <li>
-	                    <a href="#">Extrato</a>
-                        <a href="#">Notas</a>
+                        <a href="#"><span class="fa fa-wallet mr-3"></span> Carteira</a>
+	                    <a href="#"><span class="fa fa-exchange-alt mr-3"></span> Extrato</a>
+                        <a href="#"><span class="fas fa-chart-pie mr-3"></span> Gráficos</a>
+                        <a href="#"><span class="fas fa-coins mr-3"></span> Dividendos</a>
 	                </li>
                 </ul><i class=""></i>
-
-	          <li>
-	              <a href="#"><span class="fas fa-coins mr-3"></span> Investimentos</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-briefcase mr-3"></span> Carteira</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-sticky-note mr-3"></span> Dividendos</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Calculo DARF</a>
-	          </li>
+            </li>
+            <li class="active">
+                <a href="#pageSubmenuDT" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-money-bill mr-3"></span> Day Trade</a>
+                <ul class="collapse list-unstyled" id="pageSubmenuDT">
+	                <li>
+                        <a href="#"><span class="fa fa-wallet mr-3"></span> Carteira</a>
+	                    <a href="#"><span class="fa fa-exchange-alt mr-3"></span> Extrato</a>
+                        <a href="#"><span class="fas fa-chart-pie mr-3"></span> Gráficos</a>
+	                </li>
+                </ul><i class=""></i>
+            </li>
+            <li class="active">
+                <a href="#pageSubmenuST" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-chart-line mr-3"></span> Swing Trade</a>
+                <ul class="collapse list-unstyled" id="pageSubmenuST">
+	                <li>
+                        <a href="#"><span class="fa fa-wallet mr-3"></span> Carteira</a>
+	                    <a href="#"><span class="fa fa-exchange-alt mr-3"></span> Extrato</a>
+                        <a href="#"><span class="fas fa-chart-pie mr-3"></span> Gráficos</a>
+	                </li>
+                </ul><i class=""></i>
+            </li>
+            <li>
+                <a href="#"><span class="fa fa-sticky-note mr-3"></span> Notas</a>
+                </li>
+            
+              <li>
+                <a href="#"><span class="fas fa-calculator mr-3"></span> Taxas</a>
+                </li>
+	        <!--  <li>
+              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Cálculo DARF</a>
+	          </li> 
+            -->
 	        </ul>
 
-	        <div class="footer">
-	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Plataforma do Investidor | Todos os direitos reservados
-						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        <div class="footer" >
+	        	<br /><br />
+                <p id="copyright">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+                        <br />Plataforma do Investidor | Todos os direitos reservados
+                </p>
 	        </div>
 
 	      </div>
@@ -89,12 +111,15 @@
       <div id="content" class="p-4 p-md-5 pt-5">
       
        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navconteudo" style="background-color: #e3f2fd;">
-                <div class="container-fluid">
+        <img src="../../static/images/logo.png" id="logo"/>        
+        <div class="container-fluid">
 
               
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        
                         <ul class="nav navbar-nav ml-auto">
+                            
                             <li class="nav-item active">
                                 <a class="nav-link" href="#"><span id="carteiraUsuario">Carteira Fulano</a>
                             </li>
