@@ -8251,7 +8251,7 @@
         #sidebar.active {
           margin-left: 0; }
         #sidebar .custom-menu {
-          margin-right: -60px !important;
+          margin-right: -100px !important;
           top: 10px !important; } }
     #sidebar .custom-menu {
       display: inline-block;
@@ -8298,6 +8298,7 @@
     width: 100%;
     padding: 0;
     min-height: 100vh;
+    
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
