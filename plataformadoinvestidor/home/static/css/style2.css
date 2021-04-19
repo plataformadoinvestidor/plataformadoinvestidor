@@ -62,7 +62,7 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #295994;
     color: #fff;
     transition: all 0.3s;
 }
@@ -73,7 +73,7 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #295994;
 }
 
 #sidebar ul.components {
@@ -93,14 +93,15 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #295994;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #295994;
+
 }
 
 a[data-toggle="collapse"] {
@@ -118,7 +119,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #295994;
 }
 
 ul.CTAs {
@@ -140,7 +141,7 @@ a.download {
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #295994 !important;
     color: #fff !important;
 }
 
@@ -181,6 +182,7 @@ a.article:hover {
     }
     #sidebarCollapse span {
         display: none;
+        height: 100%;
     }
 }
 
@@ -190,16 +192,13 @@ a.article:hover {
     PERSONALIZADOS
 ----------------------------------------------------- */
 
-.footer p {
-    color: rgba(255, 255, 255, 0.5); 
-    position: absolute;
-}
-    
 #copyright{
+    width: 250px;
     font-size: 10px;
     color: #fafafa;
-    bottom:0%;
-    position: absolute;
+    position: relative;
+    bottom:30px;
+    text-align: center;
 }
 
 #valorSaldo{
@@ -220,3 +219,4 @@ a.article:hover {
 #logo{
     margin-left: 5px;
 }
+
