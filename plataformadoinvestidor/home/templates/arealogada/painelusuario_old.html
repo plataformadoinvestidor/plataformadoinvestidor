@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	 <!--====== Title ======-->
+        <title>Plataforma do Investidor</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--====== Favicon Icon nao precisa======-->
+        <link rel="shortcut icon" href="/static/images/favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+        <!--====== Magnific Popup CSS nao precisa======-->
+        <link rel="stylesheet" href="">
+            
+        <!--====== Slick CSS nao precisa======-->
+        <link rel="stylesheet" href="/static/css/slick.css">
+            
+        <!--====== Line Icons CSS - nao precisa ======-->
+        <link rel="stylesheet" href="">
+            
+        <!--====== Bootstrap CSS ======-->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        
+        <!--====== Default CSS ======-->
+        <link rel="stylesheet" href="/static/css/default.css">
+        
+        <!--====== Style CSS ======-->
+        <link rel="stylesheet" href="/static/css/painelusuario.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="active">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	                    <i class="fas fa-bars"></i>
+	                    <span class="sr-only">Toggle Menu</span>
+	                </button>
+                </div>
+				<div class="p-4">
+		  		    <h1><a href="index.html" class="logo">Plataforma do Investidor</a></h1>
+	                <ul class="list-unstyled components mb-5">
+                        <li class="active">
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-donate mr-3"></span> Buy & Hold</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="#"><span class="fa fa-wallet mr-3"></span> Carteira</a>
+                                    <a href="#"><span class="fa fa-exchange-alt mr-3"></span> Extrato</a>
+                                    <a href="#"><span class="fas fa-chart-pie mr-3"></span> Gráficos</a>
+                                    <a href="#"><span class="fas fa-coins mr-3"></span> Dividendos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="#pageSubmenuDT" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="far fa-chart-bar mr-3"></span> Day Trade</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenuDT">
+                                <li>
+                                    <a href="#"><span class="fa fa-wallet mr-3"></span> Carteira</a>
+                                    <a href="#"><span class="fa fa-exchange-alt mr-3"></span> Extrato</a>
+                                    <a href="#"><span class="fas fa-chart-pie mr-3"></span> Gráficos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="#pageSubmenuST" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-chart-line mr-3"></span> Swing Trade</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenuST">
+                                <li>
+                                    <a href="#"><span class="fa fa-wallet mr-3"></span> Carteira</a>
+                                    <a href="#"><span class="fa fa-exchange-alt mr-3"></span> Extrato</a>
+                                    <a href="#"><span class="fas fa-chart-pie mr-3"></span> Gráficos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fas fa-clipboard-list mr-3"></span> Notas</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fas fa-calculator mr-3"></span> Taxas</a>
+                        </li>
+                        <!--  
+                        <li>
+                            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Cálculo DARF</a>
+                        </li> 
+                        -->
+	                </ul>
+
+	            <div class="footer">
+	                <br /><br />
+                    <p id="copyright">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+                        <br />Plataforma do Investidor | Todos os direitos reservados
+                    </p>
+	            </div>
+	        </div>
+    	    </nav>
+        
+        <!-- Page Content  -->
+        
+        <div id="content" class="p-4 p-md-5 pt-5">  
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navconteudo" style="background-color: #e3f2fd;">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav ml-left">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><span id="carteiraUsuario">Carteira Fulano</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-money-bill "></i> Saldo investido: <span id="valorSaldo">R$ 500,00</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-line-chart"></i> Rentabilidade: <span id="rentabilidade">10,50%</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="../../static/images/logo.png" id="logo" />    
+                </div>
+            </nav>
+		</div>
+    </div>
+        <script src="/static/script/jquery.min.js"></script>
+        <script src="/static/script/popper.js"></script>
+        <script src="/static/script/bootstrap.min.js"></script>
+        <script src="/static/script/main.js"></script>
+    </body>
+</html>

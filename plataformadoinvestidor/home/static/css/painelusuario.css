@@ -8195,8 +8195,10 @@
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
+    /* O Box-shadow é o que faz a sombra na navbar, dá pra trocar por none, 
+    mas deixamos assim pra ficar mais fácil de testar */
     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); }
+    box-shadow: 1px 1px 3px rgba(244, 244, 244, 0.1); }
   
   .navbar-btn {
     -webkit-box-shadow: none;
@@ -8344,9 +8346,8 @@
         position: relative;
         left: 30px;
         top: -25px;
-        height: 50px;
+        height: 70px;
         background-color: #5356b1;
-       
     }
     #valorSaldo{
         color: #000;
@@ -8370,5 +8371,6 @@
     }
 
     #logo{
-      margin-left: 2px;
+      top: -5px;
+      position: relative;
     }
