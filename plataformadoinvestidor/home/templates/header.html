@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../../static/css/painelusuario.css">
+    <link rel="stylesheet" href="../../static/css/header.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
@@ -31,11 +31,6 @@
     
         <!-- Sidebar  -->
         <nav id="sidebar">
-        
-        <div class="custom-menu">
-           <button type="button" id="btn_menu" class="btn btn-primary">
-        <i class="fa fa-bars"></i>
-        </button>
             <div class="sidebar-header">
                 <h3>Plataforma do Investidor</h3>
                 
@@ -114,16 +109,10 @@
         <!-- NavBar Menu  -->
         
         <div id="content">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-        </button>
                 <div class="container-fluid">
 
-                    {% comment %} <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Menu</span>
-                    </button> {% endcomment %}
+                    
                     <img src="../../static/images/logo.png" id="logo"/>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
@@ -147,13 +136,13 @@
                     </div>
                 </div>
             </nav>
-
+            <button type="button" id="btn_menu" class="btn btn-primary">
+                <i class="fas fa-angle-double-right"></i>
+            </button>
     {% block content %}
     <!--CONTEUDO QUE VAI APARECER NA SUAS PAGINAS--> -->
     
     {% endblock content %}
-
-<button type="button" id="sidebarCollapse" class="btn btn-info"></button>
 
            
     </div>

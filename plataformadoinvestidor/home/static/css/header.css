@@ -150,7 +150,7 @@ a.article:hover {
 ----------------------------------------------------- */
 
 #content {
-    width: calc(100% - 250px);
+    width: calc(98% - 250px);
     padding: 40px;
     min-height: 100vh;
     transition: all 0.3s;
@@ -160,7 +160,7 @@ a.article:hover {
 }
 
 #content.active {
-    width: 100%;
+    width: 98%;
 }
 
 /* ---------------------------------------------------
@@ -191,18 +191,14 @@ a.article:hover {
 
 
 #btn_menu  {
-   
-    position: fixed;
-    left: 230px;
-    top: 50px;
-    border-radius:50%;
-    height: 6%;
-    width: 3% ;
+    margin-bottom: -50px !important;
     color: white;
-    background-color: #295994;
-    border-color: white;
-
-
+    background-color: #fafafa;
+    color: #295994;
+    border-color: #fafafa;
+    top: -80px;
+    position: relative;
+    margin-left: -60px;
 
 }
 
