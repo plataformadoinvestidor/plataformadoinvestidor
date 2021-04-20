@@ -183,8 +183,37 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
         height: 100%;
+        position: absolute;
+        bottom: 3px;
     }
 }
+
+
+
+#btn_menu  {
+   
+    position: fixed;
+    left: 230px;
+    top: 50px;
+    border-radius:50%;
+    height: 6%;
+    width: 3% ;
+    color: white;
+    background-color: #295994;
+    border-color: white;
+
+
+
+}
+
+#sidebar.active .custom-menu {
+    margin-right: -50px; }
+
+#btn_menu:hover {
+    transform: scale(1.05);
+}
+
+
 
 
 
