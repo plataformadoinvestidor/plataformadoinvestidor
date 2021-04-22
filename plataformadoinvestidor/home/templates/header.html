@@ -24,19 +24,12 @@
 </head>
 
 <body>
-
-
- 
     <div class="wrapper">
-    
-        <!-- Sidebar  -->
+        <!-- Sidebar Menu Lateral  -->
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Plataforma do Investidor</h3>
-                
             </div>
-         
-          
             <ul class="list-unstyled components">
             
                 <li class="active">
@@ -111,11 +104,9 @@
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
-                    
                     <img src="../../static/images/logo.png" id="logo"/>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
+                    <button id="btn_right" class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i id="btn-right" class="fas fa-angle-double-down"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -130,14 +121,14 @@
                                 <a class="nav-link" href="#"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-line-chart"></i> Rentabilidade: <span id="rentabilidade">10,50%</span></a>
+                                <a class="nav-link" href="#"><i class="fas fa-chart-area"></i> Rentabilidade: <span id="rentabilidade">10,50%</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <button type="button" id="btn_menu" class="btn btn-primary">
-                <i class="fas fa-angle-double-right"></i>
+            <button type="button" id="btn_menu" class="btn btn-primary" data-toggle="collapse">
+                <i id="btn-left" class="fas fa-angle-double-left" ></i>
             </button>
     {% block content %}
     <!--CONTEUDO QUE VAI APARECER NA SUAS PAGINAS--> -->
@@ -166,6 +157,18 @@
                 $('#sidebar, #content').toggleClass('active');
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+                // Botão da esquerda para abrir/fechar o menu
+                $('#btn-left').toggleClass("fa-angle-double-right");
+                $('#btn-left').toggleClass("fa-angle-double-left");
+
+                
+            });
+
+            $('#btn_right').on('click', function () {
+                // Botão da direita para celulares
+                $('#btn-right').toggleClass("fa-angle-double-up");
+                $('#btn-right').toggleClass("fa-angle-double-down");
             });
         });
     </script>

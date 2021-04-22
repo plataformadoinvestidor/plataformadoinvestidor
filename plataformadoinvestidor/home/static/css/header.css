@@ -188,34 +188,27 @@ a.article:hover {
     }
 }
 
-
+/* ---------------------------------------------------
+    PERSONALIZADOS
+----------------------------------------------------- */
 
 #btn_menu  {
     margin-bottom: -50px !important;
-    color: white;
     background-color: #fafafa;
     color: #295994;
     border-color: #fafafa;
-    top: -80px;
+    top: -85px;
     position: relative;
-    margin-left: -60px;
-
+    margin-left: -50px;
 }
 
 #sidebar.active .custom-menu {
-    margin-right: -50px; }
+    margin-right: -50px; 
+}
 
 #btn_menu:hover {
     transform: scale(1.05);
 }
-
-
-
-
-
-/* ---------------------------------------------------
-    PERSONALIZADOS
------------------------------------------------------ */
 
 #copyright{
     width: 250px;
@@ -244,4 +237,5 @@ a.article:hover {
 #logo{
     margin-left: 5px;
 }
+
 
