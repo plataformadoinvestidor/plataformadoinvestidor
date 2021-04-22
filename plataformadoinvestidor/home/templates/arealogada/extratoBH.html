@@ -1,0 +1,80 @@
+<!--Para carregar meu header.html, que é o cabeçalho do sistema-->
+{% extends "header.html" %}
+<!--Para carregar meu static para achar as coisas que estão na pasta static-->
+{% load static %}
+{% block content %}
+
+
+<body>
+  <p>Extrato - Buy & Hold </p>
+  <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td>Prescott Bartlett</td>
+                <td>Technical Author</td>
+                <td>London</td>
+                <td>27</td>
+                <td>2011/05/07</td>
+                <td>$145,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Cortez</td>
+                <td>Team Leader</td>
+                <td>San Francisco</td>
+                <td>22</td>
+                <td>2008/10/26</td>
+                <td>$235,500</td>
+            </tr>
+            <tr>
+                <td>Martena Mccray</td>
+                <td>Post-Sales support</td>
+                <td>Edinburgh</td>
+                <td>46</td>
+                <td>2011/03/09</td>
+                <td>$324,050</td>
+            </tr>
+           
+            <tr>
+                <td>Zenaida Frank</td>
+                <td>Software Engineer</td>
+                <td>New York</td>
+                <td>63</td>
+                <td>2010/01/04</td>
+                <td>$125,250</td>
+            </tr>
+         
+          
+          
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+          
+          
+</body>
+{% endblock content %}
+<script>
+$(document).ready( function () {
+    $('#example').DataTable();
+} );
+<script>

@@ -16,11 +16,14 @@
 
     <!-- Ícones -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+   
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    
+    <!--Datatables CSS-->  
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"/>
+
+
 </head>
 
 <body>
@@ -28,7 +31,7 @@
         <!-- Sidebar Menu Lateral  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Plataforma do Investidor</h3>
+               <a href="{% url 'painelusuario'%}"> <h3>Plataforma do Investidor</h3></a>
             </div>
             <ul class="list-unstyled components">
             
@@ -39,7 +42,7 @@
                             <a href="#"><span class="fa fa-wallet mr-3"></span>Carteira</a>
                         </li>
                         <li>
-                            <a href="#"><span class="fa fa-exchange-alt mr-3"></span>Extrato</a>
+                            <a href="{% url 'extratoBH'%}"><span class="fa fa-exchange-alt mr-3"></span>Extrato</a>
                         </li>
                         <li>
                             <a href="#"><span class="fas fa-chart-pie mr-3"></span>Gráficos</a>
@@ -104,7 +107,7 @@
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <img src="../../static/images/logo.png" id="logo"/>
+                    <a href="{% url 'painelusuario'%}"><img src="../../static/images/logo.png" id="logo"/></a>
                     <button id="btn_right" class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i id="btn-right" class="fas fa-angle-double-down"></i>
                     </button>
@@ -138,6 +141,10 @@
            
     </div>
 
+    <!--Jquery-->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--Datatables JS-->
+    <script src="http://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->

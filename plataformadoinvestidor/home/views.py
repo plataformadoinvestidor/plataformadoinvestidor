@@ -36,6 +36,9 @@ def cadastrarUsuario(request):
 def painelUsuario(request):
     return render(request, 'arealogada/painelusuario.html')
 
+def extratoBH(request):
+    return render(request, 'arealogada/extratoBH.html')
+
 
 
 

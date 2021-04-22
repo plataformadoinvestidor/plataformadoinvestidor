@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from django.urls import include, path, re_path
-from home.views import home, planos, faq, login, quemSomos, contato, cadastrarUsuario, painelUsuario
+from home.views import home, planos, faq, login, quemSomos, contato, cadastrarUsuario, painelUsuario, extratoBH
 #from courses.views import courses, details
 
 # Configurar minhas URLs para acessar a pagina
@@ -18,6 +18,8 @@ urlpatterns = [
     re_path(r'^contato/$', contato , name='contato'),
     re_path(r'^cadastrarUsuario/$', cadastrarUsuario , name='cadastrarUsuario'),
     re_path(r'^painelusuario/$', painelUsuario , name='painelusuario'),
+    re_path(r'^extratoBH/$', extratoBH , name='extratoBH'),
+    
     
     
     
