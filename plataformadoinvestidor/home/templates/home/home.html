@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon nao precisa======-->
-    <link rel="shortcut icon" href="static/images/financelogo.svg">
+    <link rel="shortcut icon" href="static/images/logo.png">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -34,6 +34,10 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
     
 </head>
 
@@ -78,11 +82,11 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item active"><a class="page-scroll" href="#home">Página inicial</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#faq">FAQ</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#planos">Nossos Planos</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#about">Quem somos</a></li>          
+                                <li class="nav-item"><a class="page-scroll" href="#faq">FAQ</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#contact">Contato</a></li>
-								 <li class="nav-item"><a class="page-scroll" href="{% url 'login'%}">Área do Usuário</a></li>
+								<li class="nav-item"><a class="page-scroll" href="{% url 'login'%}">Área do Usuário</a></li>
                             </ul>
                         </div>
                         
@@ -98,8 +102,6 @@
 
     <section id="home" class="slider_area">
         <div id="carouselThree" class="carousel slide" data-ride="carousel">
-   
-
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
@@ -118,41 +120,11 @@
 						   <!--<img src="static/images/slider/2.png" alt="Hero">--> 
                         </div> <!-- slider-imgae -->
                     </div> <!-- slider-imgae box -->
-                </div> <!-- carousel-item -->
-
-                
-
-            
+                </div> <!-- carousel-item -->   
         </div>
     </section>
 
     <!--====== SLIDER PART ENDS ======-->
-    
-    <!--====== FEATRES TWO PART START ======-->
-
-    <section id="faq" class="features-area">
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-10">
-                    <div class="section-title text-center pb-10">
-                        <h3 class="title">FAQ</h3>
-                        <p class="text">aqui você tira todoas as sua duvidas sobre a nossa plataforma!</p>
-						<div id="custom-search-input">
-							<div class="input-group col-md-12">
-								<input id="input_pesquisa" type="text" class="form-control" placeholder="Qual a sua Dúvida?" />
-									<button id="btn_pesquisar" class="btn btn-info btn-lg" type="button">
-									  <span class="glyphicon glyphicon-search"></span>
-									</button>
-							</div>
-						</div>
-			        </div> <!-- row -->
-                </div>
-            </div> <!-- row -->
-            
-    </section>
-
-    <!--====== FEATRES TWO PART ENDS ======-->
     
     <!--====== PORTFOLIO PART START ======-->
 
@@ -172,15 +144,17 @@
                         <div class="pricing-icon text-center">
                             <!-- imagem para plano <img src="static/images/planobasico.png" alt="">-->
                         </div>
-						<!-- Plano básico>-->
+						<!-- Plano Conservador-->
                         <div class="pricing-header text-center">
-                            <h5 class="sub-title">Plano Básico</h5>
-                            <p class="month"><span class="price">R$ 15,00</span>/mês</p>
+                            <h5 class="sub-title">Plano Conservador</h5>
+                            <p class="month"><span class="price">R$ 19,90</span>/mês</p>
                         </div>
-                        <div class="pricing-list text-center">
+                        <div class="pricing-list text-left">
                             <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Extrato Day Trader</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Extrato Swing Trader</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Controle de investimentos Buy & Hold</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Cálculo do Rateio das Notas de Corretagem</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Atribuição de notas para os ativos</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Definição de % desejável por tipo de investimento</li>
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
@@ -191,18 +165,15 @@
                 
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                         
-                        </div>
-						<!-- Plano Standard="">-->
+						<!-- Plano Moderado -->
                         <div class="pricing-header text-center">
-                            <h5 class="sub-title">Plano Standard</h5>
-                            <p class="month"><span class="price">R$ 25,00</span>/mês</p>
+                            <h5 class="sub-title">Plano Moderado</h5>
+                            <p class="month"><span class="price">R$ 25,90</span>/mês</p>
                         </div>
-                        <div class="pricing-list text-center">
+                        <div class="pricing-list text-left">
                             <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Notas para os ativos</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Controle de investimento</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Todas as features do Plano Conservador</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Controle de Investimentos de Swing Trade</li>
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
@@ -216,15 +187,16 @@
                         <div class="pricing-icon text-center">
                           	<!-- Dá para colocar sua imagem aqui>-->
                         </div>
-							<!-- Plano Premium>-->
+							<!-- Plano Arrojado -->
                         <div class="pricing-header text-center">
-                            <h5 class="sub-title">Plano Premium</h5>
-                            <p class="month"><span class="price">R$ 35,00</span>/mês</p>
+                            <h5 class="sub-title">Plano Arrojado</h5>
+                            <p class="month"><span class="price">R$ 35,90</span>/mês</p>
                         </div>
-                        <div class="pricing-list text-center">
+                        <div class="pricing-list text-left">
                             <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Cálculo DARF</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Algo total q eu não sei</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Todas as features do Plano Moderado</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Controle de Investimentos de Day Trade</li>
+                                <li><span class="fas fa-caret-right mr-3"></span>Cálculo de DARF</li>
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
@@ -258,11 +230,11 @@
                                         </div>
                                     </div> 
                                 </div> 
-                        </div> <!-- faq accordion -->
-                    </div> <!-- faq content -->
-                </div>
-			</div>
-			<div class="col-lg-5">
+                            </div> <!-- faq accordion -->
+                        </div> <!-- faq content -->
+                    </div>
+			    </div>
+			    <div class="col-lg-5">
                     <div class="faq-content mt-45">
                         <div class="about-title">        
 							<h1 class="title">O que fazemos? <br></h1>
@@ -276,41 +248,39 @@
                                         </div>
                                     </div> 
                                 </div> 
-							
-                                
-                        </div> <!-- faq accordion -->
-						
-                    </div> <!-- faq content -->
-					
-                </div>
-			</div>
-			
-			
-			
-			
-			
-			
+                            </div> <!-- faq accordion -->
+                        </div> <!-- faq content -->
+                    </div>
+			    </div>
             </div> <!-- row -->
         </div> <!-- container -->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
     </section>
 
     <!--====== ABOUT PART ENDS ======-->
-    
-    <!--====== TESTIMONIAL PART START ======-->
+    <!--====== FEATRES TWO PART START ======-->
 
-    
-    <!--====== TESTIMONIAL PART ENDS ======-->
-    
+    <section id="faq" class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">FAQ</h3>
+                        <p class="text">Aqui você tira todas as sua dúvidas sobre a nossa Plataforma!</p><br/>
+						<div id="custom-search-input">
+							<div class="input-group col-md-12">
+								<input id="input_pesquisa" type="text" class="form-control" placeholder="Qual a sua Dúvida?" />
+									<button id="btn_pesquisar" class="btn btn-info btn-lg" type="button">
+									  <span class="glyphicon glyphicon-search"></span>
+									</button>
+							</div>
+						</div>
+			        </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+            
+    </section>
+
+    <!--====== FEATRES TWO PART ENDS ======-->
     <!--====== TEAM START ======-->
 
     
@@ -368,20 +338,12 @@
 				</div> <!-- row -->
             </div> <!-- contact info -->
 			
-			
-			
-			
-			
-			
-			
-			
-			
+
 			<hr>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Envie <span> uma mensagem </span></h4>
-                        
                         <form id="contact-form" action="static/contact.php" method="post">
                             <div class="row">
                                 <div class="col-md-6">

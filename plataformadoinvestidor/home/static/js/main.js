@@ -15,10 +15,10 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src", "static/images/finance.svg");
+            $(".navbar-area img").attr("src", "static/images/logo.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar-area img").attr("src", "static/images/financelogo.svg");
+            $(".navbar-area img").attr("src", "static/images/logo.png");
         }
     });
 
